@@ -7,10 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <button type="button" onclick="showMessage();">Click Me!</button>
+    <button type="button" id="showMessage">Click Me!</button>
     <script>
-        function showMessage(){
-            alert('Hello Wold !');
+        var demo = document.getElementById("showMessage");
+        demo.addEventListener("click", clickFunction);
+        function clickFunction() {
+            alert(" Hello World")
         }
     </script>
 </body>
