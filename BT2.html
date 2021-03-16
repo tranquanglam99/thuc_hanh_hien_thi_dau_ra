@@ -8,9 +8,11 @@
 </head>
 <body>
     <div id="myid"></div>
-    <button type="button" onclick="show();">Click Me!</button>
+    <button type="button" id="showMessage">Click Me!</button>
     <script>
-        function show(){
+        var demo = document.getElementById("showMessage");
+        demo.addEventListener("click", clickFunction);
+        function clickFunction() {
             document.getElementById('myid').innerHTML= "Hello Wold !";
         }
     </script>

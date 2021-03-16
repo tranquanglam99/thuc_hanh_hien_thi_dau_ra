@@ -7,9 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <button type="button" onclick="showMessage();">Click Me!</button>
+    <button type="button" id="showMessage">Click Me!</button>
     <script>
-        function showMessage(){
+        var demo = document.getElementById("showMessage")
+        demo.addEventListener("click", clickFunction);
+        function clickFunction() {
             document.write(' Hello Wold !');
         }
     </script>
